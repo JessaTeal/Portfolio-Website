@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta charset="utf-8">
+    <title> Jessa's Portfolio Website </title>
+    <link rel="normalize" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body class="page-container">
+    <div class="content-wrap">
+      <header class="page-header">
+        <form action="home.html">
+          <button type="submit" class="button_logo">
+            <img src="./img/logofinal.png" class="img_logo" alt="logo that says Jessa Teal">
+          </button>
+        </form>
+        <nav class="main-navigation page-header_item">
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <form action="home.html">
+                <button type="submit" role="menuitem" class="navigation-list_item button">
+                    Home
+                </button>
+              </form>
+            </li>
+            <li role="presentation">
+                <form action="about.html">
+                  <button type="submit" role="menuitem" class="navigation-list__item navigation-list_item--active button">
+                    About Me!
+                  </button>
+                </form>
+            </li>
+            <li role="presentation">
+                <form action="contact.html">
+                  <button type="submit" role="menuitem" class="navigation-list_item button">
+                    Contact
+                  </button>
+                </form>
+            </li>
+            <li role="presentation">
+                <form action="work.html">
+                  <button type="submit" role="menuitem" class="navigation-list_item button">
+                    Work
+                  </button>
+                </form>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div>
+          <div class="about_page">
+            <h1>Hello World!</h1>
+              <p>I am currently in my second week with CareerFoundry in the Web Dev Program.<br>
+                 I have a Bachelor's degree in Psychology and have been working as a treatment <br>
+                 coordinator for the last 5 years in the dental field. <br>
+                 Please check back soon for more updates!</p>
+              <form action="./docs/resume.pdf" target="_blank">
+                <button class="button">
+                  Resume
+                </button>
+              </form>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <td><u>Skills</u></td>
+                    <td><u>Years of Experience</u></td>
+                    <td><u>Level of Expertise</u></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>HTML</td>
+                    <td>1</td>
+                    <td>Beginner</td>
+                  </tr>
+                  <tr>
+                    <td>Dentrix</td>
+                    <td>5</td>
+                    <td>Expert</td>
+                  </tr>
+                  <tr>
+                    <td>Treatment Planning</td>
+                    <td>4</td>
+                    <td>Advanced</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+      </div>
+    </div>
+
+      <footer>
+        <p>Follow me on:</p>
+          <div class="social-media">
+            <form action="https://www.github.com" target="_blank">
+              <button class="button_logo">
+                <img src="img/github_icon.svg" alt="Github">
+              </button>
+            </form>
+            <form action="https://www.twitter.com" target="_blank">
+              <button class="button_logo">
+                <img src="img/twitter_icon.svg" alt="Twitter">
+              </button>
+            </form>
+            <form action="https://www.linkedin.com" target="_blank">
+              <button class="button_logo">
+                <img src="img/linkedin_icon.svg" alt="LinkedIn">
+              </button>
+            </form>
+          </div>
+      </footer>
+
+  <script src="js/tota11y.min.js"></script>
+
+  </body>
+
+</html>
