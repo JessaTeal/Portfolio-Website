@@ -7,7 +7,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header {
@@ -30,32 +30,32 @@ header {
 
 .page-header_item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
 }
 
 .page-header_item:last-child {
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  text-align: center;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
   padding-right: 15px;
   padding-top: 10px;
 }
 
 .right {
   -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
 }
 
 .left {
   -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
 }
 
 .wreath {
   -webkit-animation: 30s infinite linear absolute;
-  animation: 30s infinite linear absolute;
+          animation: 30s infinite linear absolute;
   text-align: center;
   height: 150px;
   width: auto;
@@ -65,11 +65,9 @@ header {
   0% {
     fill: #f6f;
   }
-
   50% {
     fill: #004646;
   }
-
   100% {
     fill: #fff;
   }
@@ -79,16 +77,13 @@ header {
   0% {
     fill: #f6f;
   }
-
   50% {
     fill: #004646;
   }
-
   100% {
     fill: #fff;
   }
 }
-
 body {
   font-family: "quicksand", sans-serif;
   font-weight: 400;
@@ -124,8 +119,8 @@ body {
 .contact_page {
   text-align: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contactpic {
@@ -167,8 +162,8 @@ footer {
   padding: 20px;
   margin: 20px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .grid > *:nth-child(1) {
@@ -208,7 +203,6 @@ footer {
 .main-navigation ul {
   list-style-type: none;
 }
-
 .main-navigation li {
   display: inline-block;
   margin-left: 15px;
@@ -224,7 +218,7 @@ a:visited {
 
 a:hover {
   -webkit-text-decoration-color: #ff1493;
-  text-decoration-color: #ff1493;
+          text-decoration-color: #ff1493;
 }
 
 a:active {
@@ -290,14 +284,12 @@ a:active {
     grid-template-columns: 1fr;
   }
 }
-
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
