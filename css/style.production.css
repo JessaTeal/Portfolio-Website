@@ -1,19 +1,18 @@
-:root {
-  --primary-color: #fff;
-  --secondary-color: #a9a9a9;
-  --tertiary-color: #004646;
-  --hover-color: #FF1493;
-  --pink: #ff66ff;
-  --animation: infinite alternate linear;
-}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header {
   font-weight: 600;
-  background-color: var(--primary-color);
+  background-color: #fff;
   margin-top: 0px;
 }
 
@@ -22,46 +21,67 @@ header {
 }
 
 .page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 20px;
 }
 
 .page-header_item {
-  flex: 0 1 200px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
 }
 
 .page-header_item:last-child {
-  flex-grow: 1;
-  text-align: right;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
   padding-right: 15px;
   padding-top: 10px;
 }
 
 .right {
-  animation: 4s color-change var(--animation);
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
 }
 
 .left {
-  animation: 4s color-change var(--animation);
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
 }
 
 .wreath {
-  animation: 30s infinite linear absolute;
+  -webkit-animation: 30s infinite linear absolute;
+          animation: 30s infinite linear absolute;
   text-align: center;
   height: 150px;
   width: auto;
 }
 
-@keyframes color-change {
+@-webkit-keyframes color-change {
   0% {
-    fill: var(--pink);
+    fill: #ff66ff;
   }
   50% {
-    fill: var(--tertiary-color);
+    fill: #004646;
   }
   100% {
-    fill: var(--primary-color);
+    fill: #fff;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #ff66ff;
+  }
+  50% {
+    fill: #004646;
+  }
+  100% {
+    fill: #fff;
   }
 }
 body {
@@ -98,7 +118,9 @@ body {
 
 .contact_page {
   text-align: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contactpic {
@@ -129,18 +151,65 @@ footer {
   width: 100%;
 }
 
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .grid {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 300px 20px 300px 20px 300px;
   grid-template-columns: 300px 300px 300px;
+  -ms-grid-rows: 300px 20px 300px;
   grid-template-rows: 300px 300px;
   grid-gap: 20px;
   padding: 20px;
   margin: 20px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
 }
 
 .grid_item {
-  background-color: var(--primary-color);
+  background-color: #fff;
 }
 
 .main-navigation ul {
@@ -152,36 +221,53 @@ footer {
 }
 
 a {
-  color: var(--tertiary-color);
+  color: #004646;
 }
 
 a:visited {
-  color: var(--hover-color);
+  color: #FF1493;
 }
 
 a:hover {
-  text-decoration-color: var(--hover-color);
+  -webkit-text-decoration-color: #FF1493;
+          text-decoration-color: #FF1493;
 }
 
 a:active {
-  color: var(--primary-color);
+  color: #fff;
 }
 
-.button_secondary, .button {
+.button_secondary {
   border: none;
   font-family: inherit;
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
+  background-color: #004646;
+  color: #fff;
   text-decoration: none;
   padding: 12px;
   border-radius: 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+.button {
+  border: none;
+  font-family: inherit;
+  background-color: #004646;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
 .button_secondary {
-  background-color: var(--primary-color);
-  color: var(--tertiary-color);
+  background-color: #fff;
+  color: #004646;
 }
 
 .button:hover, .button:focus, .button_logo:hover, .button_logo:focus {
@@ -191,7 +277,7 @@ a:active {
 
 .button_logo {
   border: none;
-  background-color: var(--primary-color);
+  background-color: #fff;
   padding: 5px;
 }
 
@@ -203,11 +289,13 @@ a:active {
 
 @media all and (max-width: 500px) {
   .grid {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
