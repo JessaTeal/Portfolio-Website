@@ -57,13 +57,16 @@ header {
   0% {
     fill: var(--pink);
   }
+
   50% {
     fill: var(--tertiary-color);
   }
+
   100% {
     fill: var(--primary-color);
   }
 }
+
 body {
   font-family: "quicksand", sans-serif;
   font-weight: 400;
@@ -146,6 +149,7 @@ footer {
 .main-navigation ul {
   list-style-type: none;
 }
+
 .main-navigation li {
   display: inline-block;
   margin-left: 15px;
@@ -167,7 +171,8 @@ a:active {
   color: var(--primary-color);
 }
 
-.button_secondary, .button {
+.button_secondary,
+.button {
   border: none;
   font-family: inherit;
   background-color: var(--tertiary-color);
@@ -209,11 +214,13 @@ a:active {
     grid-template-columns: 1fr;
   }
 }
+
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;

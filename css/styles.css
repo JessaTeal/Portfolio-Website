@@ -146,15 +146,13 @@ footer {
   background-color: var(--primary-color);
 }
 
-.main-navigation {
-  ul {
-    list-style-type: none;
-  }
+.main-navigation ul {
+  list-style-type: none;
+}
 
-  li {
-    display: inline-block;
-    margin-left: 15px;
-  }
+.main-navigation li {
+  display: inline-block;
+  margin-left: 15px;
 }
 
 a {
@@ -173,7 +171,8 @@ a:active {
   color: var(--primary-color);
 }
 
-%button-basic {
+.button_secondary,
+.button {
   border: none;
   font-family: inherit;
   background-color: var(--tertiary-color);
@@ -185,27 +184,17 @@ a:active {
   transition: 0.2s opacity;
 }
 
-.button {
-  @extend %button-basic;
-}
-
 .button_secondary {
-  @extend %button-basic;
-
   background-color: var(--primary-color);
   color: var(--tertiary-color);
-}
-
-%focus-hover {
-  cursor: pointer;
-  opacity: 0.8;
 }
 
 .button:hover,
 .button:focus,
 .button_logo:hover,
 .button_logo:focus {
-  @extend %focus-hover;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .button_logo {
