@@ -30,6 +30,7 @@ footer {
   clear: both;
   background-color: #fff;
   text-align: center;
+  justify-content: center;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -146,6 +147,8 @@ a:active {
 
 .grid_item {
   background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .main-navigation ul {
@@ -193,7 +196,12 @@ a:active {
   height: 50px;
   width: auto;
   position: static;
+}
+
+.social-media {
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 @keyframes color-change {
