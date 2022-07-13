@@ -92,6 +92,11 @@ a:active {
   width: auto;
 }
 
+.search {
+  flex-grow: 1;
+  display: flex;
+}
+
 .profilepic {
   float: left;
   width: 250px;
