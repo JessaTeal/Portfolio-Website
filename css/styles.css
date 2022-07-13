@@ -193,6 +193,7 @@ a:active {
   height: 50px;
   width: auto;
   position: static;
+  justify-content: center;
 }
 
 @keyframes color-change {

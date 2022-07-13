@@ -254,6 +254,7 @@ a:active {
   height: 50px;
   width: auto;
   position: static;
+  justify-content: center;
 }
 
 @-webkit-keyframes color-change {
