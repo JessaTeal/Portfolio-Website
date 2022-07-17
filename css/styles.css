@@ -45,15 +45,19 @@ a {
 }
 
 a:visited {
-  color: var(--hover-color);
+  color: var(--primary-color);
 }
 
 a:hover {
-  text-decoration-color: var(--hover-color);
+  text-decoration-color: var(--primary-color);
 }
 
 a:active {
   color: var(--primary-color);
+}
+
+.worklink {
+  color: var(--priimary-color) !important;
 }
 
 .work {
@@ -113,7 +117,7 @@ a:active {
 .table {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 75px;
+  padding: 75px;
 }
 
 .about_page {
@@ -168,6 +172,7 @@ a:active {
 
 .button_secondary,
 .button {
+  clear: both;
   border: none;
   font-family: inherit;
   background-color: var(--tertiary-color);

@@ -1,18 +1,19 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+:root {
+  --primary-color: #fff;
+  --secondary-color: #a9a9a9;
+  --tertiary-color: #004646;
+  --hover-color: #ff1493;
+  --pink: #f6f;
+  --animation: infinite alternate linear;
+}
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 header {
   font-weight: 600;
-  background-color: #fff;
+  background-color: var(--primary-color);
   margin-top: 0;
 }
 
@@ -29,8 +30,6 @@ footer {
   clear: both;
   background-color: #fff;
   text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: absolute;
   right: 0;
@@ -42,20 +41,23 @@ footer {
 }
 
 a {
-  color: #004646;
+  color: var(--tertiary-color);
 }
 
 a:visited {
-  color: #ff1493;
+  color: var(--primary-color);
 }
 
 a:hover {
-  -webkit-text-decoration-color: #ff1493;
-  text-decoration-color: #ff1493;
+  text-decoration-color: var(--primary-color);
 }
 
 a:active {
-  color: #fff;
+  color: var(--primary-color);
+}
+
+.worklink {
+  color: var(--priimary-color) !important;
 }
 
 .work {
@@ -63,22 +65,16 @@ a:active {
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 20px;
 }
 
 .page-header_item {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
   flex: 0 1 200px;
 }
 
 .page-header_item:last-child {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   text-align: right;
   padding-right: 10px;
@@ -86,17 +82,14 @@ a:active {
 }
 
 .right {
-  -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change var(--animation);
 }
 
 .left {
-  -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change var(--animation);
 }
 
 .wreath {
-  -webkit-animation: 30s infinite linear absolute;
   animation: 30s infinite linear absolute;
   text-align: center;
   height: 150px;
@@ -105,11 +98,7 @@ a:active {
 }
 
 .search {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -128,7 +117,7 @@ a:active {
 .table {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 75px;
+  padding: 75px;
 }
 
 .about_page {
@@ -138,8 +127,6 @@ a:active {
 
 .contact_page {
   text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -159,52 +146,17 @@ a:active {
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 300px 20px 300px 20px 300px;
   grid-template-columns: 300px 300px 300px;
-  -ms-grid-rows: 300px 20px 300px;
   grid-template-rows: 300px 300px;
   grid-gap: 20px;
   padding: 20px;
   margin: 20px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
-.grid > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.grid > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.grid > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-}
-
-.grid > *:nth-child(4) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-
-.grid > *:nth-child(5) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-}
-
-.grid > *:nth-child(6) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-}
-
 .grid_item {
-  background-color: #fff;
+  background-color: var(--primary-color);
   padding: 1rem;
   border-radius: 10px;
 }
@@ -218,37 +170,23 @@ a:active {
   margin-left: 15px;
 }
 
-.button_secondary {
-  border: none;
-  font-family: inherit;
-  background-color: #004646;
-  color: #fff;
-  text-decoration: none;
-  padding: 12px;
-  border-radius: 10px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
-  transition: 0.2s opacity;
-}
-
+.button_secondary,
 .button {
+  clear: both;
   border: none;
   font-family: inherit;
-  background-color: #004646;
-  color: #fff;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
   text-decoration: none;
   padding: 12px;
   border-radius: 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
 .button_secondary {
-  background-color: #fff;
-  color: #004646;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 .button:hover,
@@ -261,7 +199,7 @@ a:active {
 
 .button_logo {
   border: none;
-  background-color: #fff;
+  background-color: var(--primary-color);
   padding: 5px;
 }
 
@@ -272,55 +210,33 @@ a:active {
 }
 
 .social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
-
-@-webkit-keyframes color-change {
-  0% {
-    fill: #f6f;
-  }
-
-  50% {
-    fill: #004646;
-  }
-
-  100% {
-    fill: #fff;
-  }
 }
 
 @keyframes color-change {
   0% {
-    fill: #f6f;
+    fill: var(--pink);
   }
 
   50% {
-    fill: #004646;
+    fill: var(--tertiary-color);
   }
 
   100% {
-    fill: #fff;
+    fill: var(--primary-color);
   }
 }
 
 @media all and (max-width: 500px) {
   .grid {
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
